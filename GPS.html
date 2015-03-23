@@ -1,0 +1,2929 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GPS and the spatial data in epidemiology</title>
+  <meta charset="utf-8">
+  <meta name="description" content="GPS and the spatial data in epidemiology">
+  <meta name="author" content="Andrey Kuznetsov, Cand. Med. Sci., Senior Researcher">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="libraries/widgets/bootstrap/css/bootstrap.css"></link>
+<link rel=stylesheet href="libraries/widgets/quiz/css/demo.css"></link>
+<link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>GPS and the spatial data in epidemiology</h1>
+    <h2>The modern aspects of parasitologic and entomologic work in epidemiological supervision of tick-borne infections</h2>
+    <p>Andrey Kuznetsov, Cand. Med. Sci., Senior Researcher<br/>Kazakh Scientific Center for Quarantine and Zoonotic Diseases</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Content</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>
+<a class='btn btn-large btn-warning' href='#3'>For what purposes is it being used?</a>
+<p/>
+<p/>
+<a class='btn btn-large btn-success' href='#19'>A bit of theory</a>
+<p/>
+<p>
+<a class='btn btn-large btn-primary' href='#30'>The portable GPS receiver Garmin Dakota&#174; 20</a>
+<p/>
+<p>
+<a class='btn btn-large btn-info' href='#33'>Connection of batteries</a>
+<p/>
+<p>
+<a class='btn btn-large btn-warning' href='#36'>BaseCamp: before for the first time turning on a receiver</a>
+<p/>
+<p>
+<a class='btn btn-large btn-success' href='#80'> Field work with the Garmin Dakota&#174; 20</a>
+</p>
+
+<p>
+<a class='btn btn-large btn-primary' href='#113'>Work with routes and tracks in BaseCamp</a>
+</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:darkgrey;">
+  <article data-timings="">
+    <p><a name='3'></p>
+
+<div style='text-align: center;'>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <font color="white" size="7">
+        For what purposes is it being used?
+    </font>
+</div>
+
+<p></a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>GPS</h2>
+  </hgroup>
+  <article data-timings="">
+    <div style='text-align: center;'>
+    <img src='images/Navstar.png' />
+</div>
+
+<div align="justify">
+<h3>The Global Positioning System (GPS): for what it is necessary to an epidemiologist?</h3>
+<br/>
+<p>In this lecture we'll look at principles of work with spatial data using the Global Positioning System.</p>
+<br/>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Epidemiology and spatial data</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol class = "build incremental">
+<li>Epidemiology is the science and practical discipline that studies causes and conditions of disease occurrence and spread in defined populations.</li>
+<li>Descriptive epidemiology is designed to answer questions &quot;What?&quot; (case description), &quot;Who?&quot; (description of the population), &quot;When?&quot; (time of the case occurrence or registration) and &quot;Where?&quot; (place of the case registration).</li>
+<li>Therefore, description of an outbreak or background situation is impossible without manipulating with <strong>spatial data</strong>.</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-5" style="background:;">
+  <hgroup>
+    <h2>Spatial data</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol class = "build incremental">
+<li><strong>The spatial data</strong> (or geographic data or geodata) is the data that describe spatial objects and their sets. In other words, the spatial data have a binding to any coordinates of the terrestrial surface.</li>
+<li> In their practical work epidemiologists deal indeed with spatial data: incidence in administrative territories (oblasts / provinces, rayons / districts), absolute numbers of the diseased persons in any establishments, quality of water supply in settlements, etc.</li>
+<li>The epidemiology deals with the analysis of spatial (&quot;where?&quot;) and associated (attributive) data.</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-6" style="background:;">
+  <hgroup>
+    <h2>The spatial epidemiology</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The spatial epidemiology deals with the description and analysis of territorial (geographic) diseases&#39; distribution:</p>
+
+<ul class = "build incremental">
+<li>Diseases mapping;</li>
+<li>The spatial analysis (an overlay analysis, spatio-temporal correlation and so on);</li>
+<li>Clustering and surveillance of diseases&#39; spread.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-7" style="background:;">
+  <hgroup>
+    <h2>John Snow and diseases&#39; mapping</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul class = "build incremental">
+<li>Maps, plans and schemes are often used by epidemiologists to investigate diseases outbreaks.</li>
+<li>The earliest documented epidemiological study with using mapping and spatial analysis was the study of the cholera outbreak in London of a british physician John Snow.</li>
+<li>In 1854, in the quarter of London, Soho, there was an extensive outbreak of cholera: in three days, more than 120 people died from this infection. JJohn Snow marked locations of cases of death from cholera on a city map and found out that they were grouped around a water pump on Broad Street. He suggested that this pump is a source of cholera. He offered that the pump was put out of action (the pump handle was dismantled) that helped to stop spread of the epidemic. This enabled him to formulate a theory of the cholera spreading through contaminated water.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-8" style="background:;">
+  <hgroup>
+    <h2>The original map of John Snow</h2>
+  </hgroup>
+  <article data-timings="">
+    <div style='text-align: center;'>
+    <img src='images/Snow-original.png' />
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-9" style="background:;">
+  <hgroup>
+    <h2>The John Snow&#39;s map reproduced in Quantum GIS</h2>
+  </hgroup>
+  <article data-timings="">
+    <div style='text-align: center;'>
+    <img src='images/Snow-GIS.png' />
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-10" style="background:;">
+  <hgroup>
+    <h2>The heat map of tick-borne borreliosis spreading (QGIS)</h2>
+  </hgroup>
+  <article data-timings="">
+    <div style='text-align: center;'>
+    <img src='images/Borreliosis-map.png' />
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-11" style="background:;">
+  <hgroup>
+    <h2>ArcGIS Online</h2>
+  </hgroup>
+  <article data-timings="">
+    <div style='text-align: center;'>
+    <img src='images/ArcGIS_Online.png' />
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-12" style="background:;">
+  <hgroup>
+    <h2>GIS (Geographic Information Systems)</h2>
+  </hgroup>
+  <article data-timings="">
+    <div style='text-align: center;'>
+    <img src='images/Brucellosis-GIS.png' />
+</div>
+
+<ul>
+<li>Geographic Information Systems are  the single interacting complex of computer programs to store spatial and attributive data, their management, analysis, exchange and presentation in geographic context (mapping).</li>
+<li>The GIS properties are ideal for surveillance of infectious diseases, to control their distribution and to study outbreaks.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-13" style="background:;">
+  <hgroup>
+    <h2>Obtaining spatial data for input into GIS</h2>
+  </hgroup>
+  <article data-timings="">
+    <div style='text-align: center;'>
+    <img src='images/Theodolite.png' />
+</div>
+
+<p>The geographic coordinates for inclusion of them in spatial data can be obtained in geodetic surveys using a theodolite (the oldest way)...</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-14" style="background:;">
+  <hgroup>
+    <h2>Obtaining spatial data for input into GIS</h2>
+  </hgroup>
+  <article data-timings="">
+    <div style='text-align: center;'>
+    <img src='images/Snow-GIS-min.png' />
+</div>
+
+<p>By investigation of geographical objects with known coordinates (digitization of old maps).</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-15" style="background:;">
+  <hgroup>
+    <h2>Obtaining spatial data for input into GIS</h2>
+  </hgroup>
+  <article data-timings="">
+    <div style='text-align: center;'>
+    <img src='images/LatLong.png' />
+</div>
+
+<p>Obtaining coordinates of known geographical objects (human settlements) is possible in the specialized sites, such as <a href="http://www.latlong.net/">LatLong</a> ...</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-16" style="background:;">
+  <hgroup>
+    <h2>Obtaining spatial data for input into GIS</h2>
+  </hgroup>
+  <article data-timings="">
+    <div style='text-align: center;'>
+    <img src='images/Gearth.png' />
+</div>
+
+<p>or in the program <a href="https://www.google.com/earth/">Google Earth</a>.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-17" style="background:;">
+  <hgroup>
+    <h2>Obtaining spatial data for input into GIS</h2>
+  </hgroup>
+  <article data-timings="">
+    <div style='text-align: center;'>
+    <img src='images/Garmin_eTrex.png' />
+</div>
+
+<ul class = "build incremental">
+<li>However, the most convenient way to get the coordinates of field objects during outbreak investigation, work in a natural foci of infection, carrying out epidemiological, epizootic, parasitological and other researches is use of the global positioning systems (GPS).</li>
+<li>Field teams use GPS to get the spatial data and to construct the point layers of GIS.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-18" style="background:darkgrey;">
+  <article data-timings="">
+    <div style='text-align: center;'>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <font color="white" size="7">
+        A bit of theory
+    </font>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="blockquote" style="background:;">
+  <hgroup>
+    <h2>The Global Positioning System: definition</h2>
+  </hgroup>
+  <article data-timings="">
+    <blockquote>
+<p><strong>The Global Positioning System</strong> is a satellite navigation system providing measurement of distance, time and and defining location in the global coordinate system WGS 84. It allows to measure location and speed of objects in any place of Earth (excluding subpolar areas) almost under any weather conditions, and also in a near-earth space.</p>
+</blockquote>
+
+<p><br/>
+<em>The global coordinate system WGS 84 is used in projects of the free GIS, Quantum GIS.</em></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-20" style="background:;">
+  <hgroup>
+    <h2>GPS: technical aspects</h2>
+  </hgroup>
+  <article data-timings="">
+    <div style='text-align: center;'>
+    <img src='images/GPS-components.png' />
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-21" style="background:;">
+  <hgroup>
+    <h2>GPS: technical aspects</h2>
+  </hgroup>
+  <article data-timings="">
+    <div style='text-align: center;'>
+    <img src='images/GPS-components-min.png' />
+</div>
+
+<p>GPS consists of three main segments: space, control, and user. </p>
+
+<ul class = "build incremental">
+<li><strong>Space segment</strong> consists of the GPS satellites, which transmit radio signals from the space.</li>
+<li><strong>Control segment</strong> consists of a master station and several additional stations, ground antennas and control stations.</li>
+<li><strong>User segment</strong> consists of GPS receivers.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-22" style="background:;">
+  <hgroup>
+    <h2>Radar: measurement of distance between two points</h2>
+  </hgroup>
+  <article data-timings="">
+    <div style='text-align: center;'>
+    <img src='images/radarops.gif' />
+</div>
+
+<div>
+<p>A radar transmits a short radio impulse of great power. This impulse is emitted in one direction depending on orientation of an antenna and spreads with the speed of light c<sub>0</ sub>.</p>
+<p>If the direction of the impulse spread has an obstacle, radio wave disperses in all directions. A small portion of the impulse is reflected back to the radar.</p>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-23" style="background:;">
+  <hgroup>
+    <h2>Radar: measurement of distance between two points</h2>
+  </hgroup>
+  <article data-timings="">
+    <div style='text-align: center;'>
+    <img src='images/radarops.gif' />
+</div>
+
+<p>The return time of a radio wave t is proportional to a distance to an obstacle R, which can be calculated (in the elementary case) by formula:
+\[
+R = {{c_0 \times t} \over 2}
+\]</p>
+
+<p>It is an example of the linear coordinate of object measurement.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-24" style="background:;">
+  <hgroup>
+    <h2>GPS: calculation of three-dimensional coordinates</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><strong>Principle</strong>: GPS satellites transmit a signal from space, and all GPS receivers use this signal for calculation of their location by three coordinates in real time.</p>
+
+<p>For estimation of three-dimensional coordinates <em>x</em>, <em>y</em> and <em>z</em> the GPS receiver need to have the solved equation &quot;distance are equal to the product of speed of light and a difference of the user&#39;s signal reception moments and the moment of its synchronous emission from satellites&quot; for all <em>i</em> satellites:</p>
+
+<p>\[
+d_i = c_0 \times (t_{t,i} - t_{r,i}) + t_c = \sqrt{(x_i - x)^2 + (y_i - y)^2 + (z_i - z)^2}
+\]</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-25" style="background:;">
+  <hgroup>
+    <h2>GPS errors</h2>
+  </hgroup>
+  <article data-timings="">
+    <div style='text-align: center;'>
+    <img src='images/Navstar.png' />
+</div>
+
+<p>Accuracy of estimation of an object location with GPS affect is influenced by <a href="http://en.wikipedia.org/wiki/Error_analysis_for_the_Global_Positioning_System">many factors</a>. For example, it can be atmospheric phenomena. The delay of the returned signal can be caused by action of a solar wind and the geomagnetic phenomena in the ionosphere. This delay can be up to 300 nanoseconds, which causes an error in determining the position of an object up to 100 meters (J. A. Klobuchar, 1981). In general the bias of time estimation of the returned signal are 10 nanoseconds (3 - 5 meters).</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-26" style="background:;">
+  <hgroup>
+    <h2>GPS errors</h2>
+  </hgroup>
+  <article data-timings="">
+    <div style='text-align: center;'>
+    <img src='images/Navstar.png' />
+</div>
+
+<p>GPS signals are distorted by:</p>
+
+<ul class = "build incremental">
+<li>Atmospheric phenomena;</li>
+<li>Metal constructs;</li>
+<li>Other solid formations (mountains, buildings and so on);</li>
+<li>Electromagnetic fields .</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-27" style="background:;">
+  <hgroup>
+    <h2>GPS errors</h2>
+  </hgroup>
+  <article data-timings="">
+    <div style='text-align: center;'>
+    <img src='images/Navstar.png' />
+</div>
+
+<p>It is clear that any physical obstacle on the impulse way distorts the measurement&#39;s result.
+Remember the following <strong>rules</strong>:</p>
+
+<ol class = "build incremental">
+<li><strong>&quot;Clear sky&quot;</strong>: Use the GPS receivers in open space, far from buildings and trees.</li>
+<li>Though for obtaining coordinates in GPS only 3 satellites there are enough, it is necessary to carry out location observation at connection <strong>not less than to 4 satellites</strong>.</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-28" style="background:;">
+  <hgroup>
+    <h2>The global satellite navigation systems</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul class = "build incremental">
+<li>USA – <strong>Global Positioning System (GPS)</strong>: 32 satellites;</li>
+<li>Russian Federation - <strong>Глобальная навигационная спутниковая система (ГЛОНАСС / GLONASS)</strong>: 29 satellites;</li>
+<li>EU - <strong>Galileo</strong>: 4 satгellites; it can work with GPS and GLONASS;</li>
+<li>China - <strong>Beidou</strong>: 15 satellites.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-29" style="background:darkgrey;">
+  <article data-timings="">
+    <div style='text-align: center;'>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <font color="white" size="5">
+        The portable GPS receiver Garmin Dakota&#174; 20
+    </font>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-30" style="background:;">
+  <hgroup>
+    <h2>The Garmin Dakota 20 appearance</h2>
+  </hgroup>
+  <article data-timings="">
+    <div style='text-align: center;'>
+    <img src='images/Garmin-view.png' />
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-31" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: a power button</h2>
+  </hgroup>
+  <article data-timings="">
+    <table width="100%" cellpadding="0" cellspacing="0">
+    <tr valign="top">
+        <td width="50%" style="border: none; padding: 0cm">
+            <img src='images/Garmin-power.png' />
+        </td>
+        <td width="50%" style="border: none; padding: 0cm">
+        <ul>
+            <li><b>To turn on</b> the Dakota device push the power button;</li>
+            <li><b>To turn off</b> the Dakota device push and  hold the power button;</li>
+            <li><b>To block and to unblock</b> of a screen press and immediately turn loose the power button.</li>
+        </ul>    
+        </td>
+    </tr.>
+</table>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-32" style="background:darkgrey;">
+  <article data-timings="">
+    <div style='text-align: center;'>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <font color="white" size="7">
+        Connection of batteries
+    </font>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-33" style="background:;">
+  <hgroup>
+    <h2>Back surface of Garmin Dakota</h2>
+  </hgroup>
+  <article data-timings="">
+    <div style='text-align: center;'>
+    <img src='images/Garmin-back.png' />
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-34" style="background:;">
+  <hgroup>
+    <h2>Connection of batteries</h2>
+  </hgroup>
+  <article data-timings="">
+    <div style='text-align: center;'>
+    <img src='images/Garmin-back-min.png' />
+</div>
+
+<ul class = "build incremental">
+<li>Shift a latch to uncover a batteries&#39; compartment.</li>
+<li>A device Garmin Dakota is powered by two batteries of type AA (&quot;finger&quot; batteries).</li>
+<li>You can also use rechargeable NiMH battery.</li>
+<li>Insert the batteries into the compartment combining + and - marks on the device and batteries.</li>
+<li>Close the batteries compartment cover.</li>
+<li>If you are not going to use the device for a long time (several months), remove the batteries. The data in the device will not be lost.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-35" style="background:darkgrey;">
+  <article data-timings="">
+    <div style='text-align: center;'>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <font color="white" size="5">
+        BaseCamp: before for the first time turning on the receiver
+    </font>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-36" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: updating in the BaseCamp programme</h2>
+  </hgroup>
+  <article data-timings="">
+    <table width="100%" cellpadding="0" cellspacing="0">
+    <tr valign="top">
+        <td width="50%" style="border: none; padding: 0cm">
+            <img src='images/Garmin-card.png' />
+        </td>
+        <td width="50%" style="border: none; padding: 0cm">
+        <ul>
+            <li>Prior to work with Garmin Dakota it is necessary to update device's firmware, used maps, and also additional software.</li>
+            <li>Garmin Dakota connects with a computer with a cable with the USB interface. The user’s files can be recorded on this device. This device can be plugged as a flash drive.  (Build in memory is 850 МB; moreover, the additional flash card can be plugged and used).</li>
+        </ul>    
+        </td>
+    </tr>
+</table>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-37" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: updating in the BaseCamp programme</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul class = "build incremental">
+<li>Nevertheless, updating of the software on the device is carried out not by direct copying, but with the special programme, <a href="http://download.garmin.com/software/BaseCamp_446.exe"><strong>BaseCamp</strong></a> (before for this purpose the programme <strong>MapSource</strong> was used).</li>
+<li>The Russian-language version of BaseCamp for the PC can be loaded through the link <a href="http://www8.garmin.com/support/download_details.jsp?id=4435">http://www8.garmin.com/support/download_details.jsp?id=4435</a></li>
+<li>After loading of the file of the installer, start it and agree with modification of Windows.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-38" style="background:;">
+  <hgroup>
+    <h2>BaseCamp: steps of installation</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="images/BaseCamp1.png" alt="img"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-39" style="background:;">
+  <hgroup>
+    <h2>BaseCamp: steps of installation</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="images/BaseCamp2.png" alt="img"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-40" style="background:;">
+  <hgroup>
+    <h2>BaseCamp: steps of installation</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="images/BaseCamp3.png" alt="img"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-41" style="background:;">
+  <hgroup>
+    <h2>BaseCamp: steps of installation</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="images/BaseCamp4.png" alt="img"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-42" style="background:;">
+  <hgroup>
+    <h2>BaseCamp: the first time launching</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="images/BaseCamp5.png" alt="img"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-43" style="background:;">
+  <hgroup>
+    <h2>BaseCamp: the first time launching</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="images/BaseCamp6.png" alt="img"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-44" style="background:;">
+  <hgroup>
+    <h2>BaseCamp: the first time launching</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="images/BaseCamp7.png" alt="img"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-45" style="background:;">
+  <hgroup>
+    <h2>BaseCamp: the training video</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="images/BaseCamp7-1.png" alt="img"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-46" style="background:;">
+  <hgroup>
+    <h2>BaseCamp: the training video</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="images/BaseCamp8.png" alt="img"></p>
+
+<p>Click on the menu item makes transition to the page <a href="https://www.youtube.com/watch?v=X3fmNBCL9R4">Youtube</a> with the training videos about work with the programme (in English).</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-47" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: updating in the BaseCamp programme</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="images/BaseCamp10.png" alt="img"></p>
+
+<ul class = "build incremental">
+<li>After the launching BaseCamp, do not close the programme and connect Garmin Dakota to a computer through  the  USB .</li>
+<li>On the left, in the section &quot;Devices&quot;, an identifier Garmin Dakota 20 and also icons for access to its internal memory and preinstalled based map wil be appeared.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-48" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: updating in the BaseCamp programme</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="images/BaseCamp11.png" alt="img"></p>
+
+<p>Click the right mouse button on the icon of preinstalled maps and select in the context menu <em>&quot;Check for software updates: Dakota 20&quot;</em>.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-49" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: updating in the BaseCamp programme</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="images/BaseCamp12.png" alt="img"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-50" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: updating in the BaseCamp programme</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="images/BaseCamp13.png" alt="img"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-51" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: updating in the BaseCamp programme</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="images/BaseCamp14.png" alt="img"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-52" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: updating in the BaseCamp programme</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="images/BaseCamp15.png" alt="img"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-53" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: updating in the BaseCamp programme</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="images/BaseCamp16.png" alt="img"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-54" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: updating in the BaseCamp programme</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="images/BaseCamp17.png" alt="img"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-55" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: updating in the BaseCamp programme</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="images/BaseCamp18.png" alt="img"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-56" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: loading of additional maps</h2>
+  </hgroup>
+  <article data-timings="">
+    <table width="100%" cellpadding="0" cellspacing="0">
+    <tr valign="top">
+        <td width="50%" style="border: none; padding: 0cm">
+        <p align="center">
+            <img src='images/Garmin-Base_map1.png' />
+        </p>
+        </td>
+        <td width="50%" style="border: none; padding: 0cm">
+        <p align="center">
+            <img src='images/Garmin-Base_map2.png' /> 
+        </p>
+        </td>
+    </tr>
+</table>
+
+<p>Unfortunately, the preinstalled map on the Garmin Dakota has a low level of details. This circumstance makes it inappropriate for epidemiological work and requires installation of the additional maps.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-57" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: loading of additional maps</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="images/Maps-8.png" alt="img"></p>
+
+<ul class = "build incremental">
+<li>On <a href="https://my.garmin.com/maps/nuMaps.htm">the site of the Garmin company</a> there&#39;s a number of maps both for purchase and for free loading (nüMaps).</li>
+<li>Unfortunately, official maps of Kazakhstan are not present there. It demands loading maps of other producers on the device.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-58" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: loading of additional maps</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="images/KazGPSClub.png" alt="img"></p>
+
+<ul class = "build incremental">
+<li>Maps for reseivers are distributed as *.img files. </li>
+<li>The good source of Kazakhstan maps is the <a href="http://www.gpsclub.kz/">Kazakhstan GPS club</a> (free registration is required).</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-59" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: loading of additional maps</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul class = "build incremental">
+<li>At first *.img map should be <strong>installed on a computer</strong>. After the Garmin receiver is connected to a computer this map should be installed on the receiver <strong>by program BaseCamp</strong>.</li>
+<li>The commercial maps have also the installers which correctly register maps in the system for the BaseCamp programme can &quot;see&quot; them.</li>
+<li>Freely distributed maps are presented only by the file *.img, so they have to be installed on the computer by the programmes <a href="http://meridian.perm.ru/04_maps/gpsimg/bin/MapSetToolKit_v1.77.zip">MapSetToolKit</a> and <a href="http://meridian.perm.ru/04_maps/gpsimg/bin/cgpsmapperFree.zip">cGPSmapper</a>.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-60" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: loading of additional maps</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><em>Lets install the free distributed map of Kazakhstan (based on OpenStreet Map) on the Garmin Dakota</em>.</p>
+
+<ol class = "build incremental">
+<li>The map can be downloaded at the <a href="http://www.gpsvsem.ru/map.php?id=994">link</a> or you can find it in the catalog &quot;Map&quot; of the lecture material.</li>
+<li>The program <em>MapSetToolKit</em> and <em>cGPSmapper</em> can be downloaded at the link on the previous slide, or you can find it in the folder &quot;Software&quot;. These programmes do not require installation.</li>
+<li>Before you start work, close the <em>BaseCamp</em> programme.</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-61" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: loading of additional maps</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="images/AddMap1.png" alt="img"></p>
+
+<ul class = "build incremental">
+<li>Run the programme <em>MapSetToolKit</em>.</li>
+<li>Press a butom <em>&quot;Select IMG&quot;</em>  to choose  <strong>folder</strong> with a file *.img of the necessary map. </li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-62" style="background:red;">
+  <article data-timings="">
+    <div style='text-align: center;'>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <font color="yellow">
+        ATTENTION!<br/><br/>
+        A name of the map should be in the format: <br/><br/>
+        "eight any digits + file name extension"<br/><br/> 
+        (other files the programme doesn't see).<br/><br/> 
+        For example, the name of a map could be <i>12345678.img</i>.
+    </font>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-63" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: loading of additional maps</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="images/AddMap2.png" alt="img"></p>
+
+<ul>
+<li>In the dialog box, select the right folder name.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-64" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: loading of additional maps</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="images/AddMap3.png" alt="img"></p>
+
+<ul>
+<li>Choose with a mouse the name of map in the list <em>”Source IMG files&quot;</em> and press the button <em>&quot;Add&quot;</em> to add the map into the list <em>&quot;Selected IMG files&quot;</em>.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-65" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: loading of additional maps</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul class = "build incremental">
+<li>On the computer it is possible to install not only one map but also the maps&#39; set (mapset).</li>
+<li>But even if one map is installed, it is called a &quot;set&quot;.</li>
+<li>Create a folder for the installation of a mapset. For example, <em>&quot;Documents/Garmin/Kazakhstan&quot;</em>.</li>
+<li>Press the button <em>&quot;...&quot;</em> near the field <em>&quot;Mapset directory&quot;</em> to choose a map for installation.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-66" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: loading of additional maps</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="images/AddMap4.png" alt="img"></p>
+
+<ul>
+<li>In the dialog box choose the catalog of installation.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-67" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: loading of additional maps</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="images/AddMap5.png" alt="img"></p>
+
+<ul class = "build incremental">
+<li>In the drop-list <em>&quot;CodePage&quot;</em> select the value <em>&quot;1251&quot;</em>.</li>
+<li>Press the button <em>&quot;...&quot;</em> near the field <em>&quot;TYP files&quot;</em> to choose the auxiliary file *.typ.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-68" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: loading of additional maps</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="images/AddMap6.png" alt="img"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-69" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: loading of additional maps</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul class = "build incremental">
+<li>At installation of the card it is important to have only file *.img. Files *.typ can be absent. It does not interfere with installation of the map on the computer.</li>
+<li>In case of absence of a file *.typ, in the field <em>&quot;Family ID&quot;</em> (the identifier of a family) we input any number. It has to be unique among all sets of maps installed on your computer (all of them are visible on the right in the table <em>&quot;Mapset installed&quot;</em> in the column <em>&quot;FID&quot;</em>).</li>
+<li>If you use a file *.typ, anyway in the field <em>&quot;Family ID&quot;</em> input any number (it will be changed then to another, taken from the file *.typ).</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-70" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: loading of additional maps</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="images/AddMap7.png" alt="img"></p>
+
+<ul>
+<li>Press the bottom <em>&quot;...&quot;</em> near the field <em>&quot;cgpsmapper/cpreview folder&quot;</em> to choose the folder with the programme <em>&quot;cGPSmapper&quot;</em>.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-71" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: loading of additional maps</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="images/AddMap8.png" alt="img"></p>
+
+<ul>
+<li><em>Important!</em> Flag the checkbox <em>&quot;Install in Mapsorce&quot;</em> for the installed map will be &quot;visible&quot; in the programme <em>BaseCamp</em>.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-72" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: loading of additional maps</h2>
+  </hgroup>
+  <article data-timings="">
+    <div style='text-align: center;'>
+    <img src='images/AddMap9.png' />
+</div>
+
+<ul class = "build incremental">
+<li>Press the buttom <em>&quot;START&quot;</em> to install the map on a computer.</li>
+<li>If you used the *.typ file, a dialog box will appear suggesting to adjust a product code with that one of the TYP file. Accept this offer.</li>
+<li>After appearance of several console (black) windows at the end there has to be a window with the message <em>&quot;Convert completed&quot;</em>. It means that the map is successfully installed on the computer.</li>
+<li>Now you can install it on the receiver. Run the programme <em>BaseCamp</em> and connect the Garmin Dakota device through the USB port.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-73" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: loading of additional maps</h2>
+  </hgroup>
+  <article data-timings="">
+    <div style='text-align: center;'>
+    <img src='images/BaseCamp19.png' />
+</div>
+
+<ul class = "build incremental">
+<li>Choose the installed map in the drop-down list in the left part of the programme <em>BaseCamp</em>.</li>
+<li>If this list is absent, click by the right mouse buttom and choose in the menu the item  <em>”Maps”</em>.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-74" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: loading of additional maps</h2>
+  </hgroup>
+  <article data-timings="">
+    <div style='text-align: center;'>
+    <img src='images/BaseCamp20.png' />
+</div>
+
+<ul>
+<li>Choose in the menu of the programme <em>BaseCamp</em> Maps - Install maps.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-75" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: loading of additional maps</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="images/BaseCamp21.png" alt="img"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-76" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: loading of additional maps</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="images/BaseCamp22.png" alt="img"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-77" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: loading of additional maps</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="images/BaseCamp23.png" alt="img"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-78" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: loading of additional maps</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="images/BaseCamp24.png" alt="img"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-79" style="background:darkgrey;">
+  <article data-timings="">
+    <div style='text-align: center;'>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <font color="white" size="7">
+        Field work with the Garmin Dakota&#174; 20
+    </font>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-80" style="background:lightblue;">
+  <article data-timings="">
+    <div style='text-align: center;'>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <font color="white" size="7">
+        Connection to satellites
+    </font>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-81" style="background:;">
+  <hgroup>
+    <h2>Check youself</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<div class="quiz quiz-single well ">
+  <p>With what number of satellites the Garmin Dakota device has to establish connection for correct estimation of geographical coordinates?</p>
+
+<ol>
+<li>There is enough connection to one satellite;</li>
+<li>To two;</li>
+<li>To three;</li>
+<li><em>To four and more</em>.</li>
+</ol>
+
+  <button class="quiz-submit btn btn-primary">Submit</button>
+  <button class="quiz-toggle-hint btn btn-info">Show Hint</button>
+  <button class="quiz-show-answer btn btn-success">Show Answer</button>
+  <button class="quiz-clear btn btn-danger">Clear</button>
+  
+  <div class="quiz-hint">
+  <p>It is necessary one satellite for each coordinate in three-dimensional space plus at least another one - for the correction of the coordinates.</p>
+
+</div>
+<div class="quiz-explanation">
+  <p>One satellite only allows you to estimate the distance between objects. Two satellites allow us to estimate the coordinates in two-dimensional space, three allow  do this in three-dimensional (x, y, z). However, as at scattering a signal from satellites with obstacles and the atmospheric phenomena, the error in estimation of coordinates arises, the larger number of satellites is necessary for correction of calculation. Therefore the correct answer is 4.</p>
+
+</div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-82" style="background:;">
+  <hgroup>
+    <h2>Check youself</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<div class="quiz quiz-single well ">
+  <p>What influences quality of the signal received from satellites?</p>
+
+<ol>
+<li>Mountains;</li>
+<li>Power lines;</li>
+<li>Buildings;</li>
+<li><em>All the mentioned</em>.</li>
+</ol>
+
+  <button class="quiz-submit btn btn-primary">Submit</button>
+  <button class="quiz-toggle-hint btn btn-info">Show Hint</button>
+  <button class="quiz-show-answer btn btn-success">Show Answer</button>
+  <button class="quiz-clear btn btn-danger">Clear</button>
+  
+  <div class="quiz-hint">
+  <p>The signal delay is a cause of coordinate inaccuracy estimation.</p>
+
+</div>
+<div class="quiz-explanation">
+  <p>Quality of the signal received from satellites is influenced by the atmospheric phenomena, electromagnetic fields and any physical obstacles. Therefore the correct answer is 4.</p>
+
+</div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-83" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: connection to satellites</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul class = "build incremental">
+<li>After turning on of the receiver on its display a welcome page appears, and then - the page of the main menu.</li>
+<li>For possibility of a consistent reception of signals from satellites it is necessary to be far from high buildings, trees and power lines. Main rule of turning on of the receiver: <strong>unobstructed vision of the sky</strong>.</li>
+<li>Turning on of the receiver indoors leads to waste of energy in the battery since the device in vain looks for satellites.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-84" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: connection to satellites</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>For calculation of the current location the receiver during particular time has to collect necessary satellite data. Distinguish three modes of location estimation by the receiver: <em>cold</em>, <em>warm</em> and <em>hot</em> start.</p>
+
+<ul class = "build incremental">
+<li>At <strong>cold start</strong> the receiver has no information about the location, therefore searching of satellites takes long time — till 20 and more minutes depending on external conditions. Usually cold start is observed at the first turning on of the receiver or when moving on the considerable distance from a place of the previous switching on.</li>
+<li><strong>Warm start</strong> means that the reseiver kept in memory the almanac received at the previous switching on and also kept information about time, though with a small error. Time of the signal reception thus is reduced about several minutes.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-85" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: connection to satellites</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>For calculation of the current location the receiver during particular time has to collect necessary satellite data. Distinguish three modes of location estimation by the receiver: <em>cold</em>, <em>warm</em> and <em>hot</em> start.</p>
+
+<ul class = "build incremental">
+<li>Finally, <strong>hot start</strong> — when the receiver was switched off quite recently and data of the almanac and ephemerises did not become outdated. Time of positioning can be reduced till 10–20 seconds.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-86" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: connection to satellites</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Turn on the device for the main menu appearance.</p>
+
+<table width="100%" cellpadding="0" cellspacing="0">
+    <tr valign="top">
+        <td width="50%" style="border: none; padding: 0cm">
+            <img src='images/Garmin-main_menu1.png' />
+        </td>
+        <td width="50%" style="border: none; padding: 0cm">
+        <ul>
+            <li>In the bottom of the main menu there is an indicator of connection to satellites;</li>
+            <li>In case of connection's absense strips of the indicator will be grey; the number of green strips indicates force of the connection;</li>
+            <li>For appearance of the page of connection to satellites, press and hold about 2 seconds an indicator's icon.</li>
+        </ul>    
+        </td>
+    </tr>
+</table>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-87" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: connection to satellites</h2>
+  </hgroup>
+  <article data-timings="">
+    <table width="100%" cellpadding="0" cellspacing="0">
+    <tr valign="top">
+        <td width="50%" style="border: none; padding: 0cm">
+            <img src='images/Garmin-satellites.png' />
+        </td>
+        <td width="50%" style="border: none; padding: 0cm">
+        <ul>
+            <li>On the display of the receiver the arrangement of satellites concerning your current location will be schematically shown;</li>
+            <li>The external circle corresponds to the line of the horizon, internal – to 45 degrees over the horizon;</li>
+            <li>On the scheme numbers of satellites are also shown. The histogram in the bottom of the display shows the power of signals from each satellite recorded by the receiver.</li>
+        </ul>    
+        </td>
+    </tr>
+</table>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-88" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: connection to satellites</h2>
+  </hgroup>
+  <article data-timings="">
+    <div style='text-align: center;'>
+    <img src='images/Garmin-satellites-1.png' />
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-89" style="background:lightblue;">
+  <article data-timings="">
+    <div style='text-align: center;'>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <font color="white" size="7">
+        Setting of the Garmin Dakota&#174; 20
+    </font>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-90" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: settings</h2>
+  </hgroup>
+  <article data-timings="">
+    <div style='text-align: center;'>
+    <img src='images/Garmin-main_menu2.png' />
+</div>
+
+<p>In the main menu press the button <em>&quot;Settings&quot;</em> for pass to the page of settings of the device.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-91" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: settings</h2>
+  </hgroup>
+  <article data-timings="">
+    <table width="100%" cellpadding="0" cellspacing="0">
+    <tr valign="top">
+        <td width="50%" style="border: none; padding: 0cm">
+            <img src='images/Garmin-settings.png' />
+        </td>
+        <td width="50%" style="border: none; padding: 0cm">
+        <ul>
+            <li>Buttons of the settings page of rovide access to many sections;</li>
+            <li>We are interested only buttons <i>System</i>, <i>Display</i>, <i>Map</i> and <i>Units</i>;</li>
+            <li>For access to the <i>Units</i> button, which is beyond the navigator's screen, use the "Arrow down" button.
+</li>
+        </ul>    
+        </td>
+    </tr>
+</table>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-92" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: settings</h2>
+  </hgroup>
+  <article data-timings="">
+    <div style='text-align: center;'>
+    <img src='images/Garmin-GPS1.png' />
+</div>
+
+<ul class = "build incremental">
+<li>Press the button <em>&quot;System&quot;</em> to pass to setting of key parameters of the device.</li>
+<li>Here only the GPS type demands setting. Press the top button of the page.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-93" style="background:;">
+  <article data-timings="">
+    <table width="100%" cellpadding="0" cellspacing="0">
+    <tr valign="top">
+        <td width="50%" style="border: none; padding: 0cm">
+            <img src='images/Garmin-GPS2.png' />
+        </td>
+        <td width="50%" style="border: none; padding: 0cm">
+        <ul>
+            <li>In the Garmin Dakota 20 there are 3 GPS types: normal, WAAS and demo mode.</li>
+            <li>WAAS (wide area augmentation system) is the system of distribution of corrections to the data transferred by the GPS navigation system. Supplements GPS, increasing the accuracy of estimation of coordinates.</li>
+            <li>The demo mode imitates GPS without real connection to satellites.</li>
+        </ul>    
+        </td>
+    </tr>
+</table>
+
+<p><br/></p>
+
+<p>Unfortunately, WAAS acts only on the territory of North America. Therefore we need to switch on the  <strong>normal</strong> GPS mode.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-94" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: settings</h2>
+  </hgroup>
+  <article data-timings="">
+    <div style='text-align: center;'>
+    <img src='images/Garmin-calibration.png' />
+</div>
+
+<ul class = "build incremental">
+<li>Press the button <em>&quot;Display&quot;</em> on the page of the main menu to pass to setting of key parameters of graphic elements view on the device screen.</li>
+<li>Here only calibration of the screen demands control. Press the lower button of the page.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-95" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: settings</h2>
+  </hgroup>
+  <article data-timings="">
+    <table width="100%" cellpadding="0" cellspacing="0">
+    <tr valign="top">
+        <td width="50%" style="border: none; padding: 0cm">
+            <img src='images/Garmin-screen1.png' />
+        </td>
+        <td width="50%" style="border: none; padding: 0cm">
+            <img src='images/Garmin-screen2.png' />
+        </td>
+    </tr>
+</table>
+
+<ul class = "build incremental">
+<li>In order that the receiver correctly reacted to pressing by a finger on the touch screen, it should be calibrated.</li>
+<li>For this purpose it is necessary to touch consistently black points with a finger and to confirm the end of calibration.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-96" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: settings</h2>
+  </hgroup>
+  <article data-timings="">
+    <div style='text-align: center;'>
+    <img src='images/Garmin-maps.png' />
+</div>
+
+<ul class = "build incremental">
+<li>Press the button <em>&quot;Map&quot;</em> on the page of the main menu to pass to settings of the device&#39;s maps.</li>
+<li>Here only display of the necessary maps on the device demands control. Press the lower button of the page.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-97" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: settings</h2>
+  </hgroup>
+  <article data-timings="">
+    <table width="100%" cellpadding="0" cellspacing="0">
+    <tr valign="top">
+        <td width="50%" style="border: none; padding: 0cm">
+            <img src='images/Garmin-maps_set1.png' />
+        </td>
+        <td width="50%" style="border: none; padding: 0cm">
+            <img src='images/Garmin-maps_set2.png' />
+        </td>
+    </tr>
+</table>
+
+<ul class = "build incremental">
+<li>To tune up any map, it is necessary to press its button.</li>
+<li>On the page of the map press the button <em>&quot;i&quot;</em> to see information about this map.</li>
+<li>For deactivating of the map press the button <em>&quot;Deactivate.&quot;</em></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-98" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: settings</h2>
+  </hgroup>
+  <article data-timings="">
+    <table width="100%" cellpadding="0" cellspacing="0">
+    <tr valign="top">
+        <td width="50%" style="border: none; padding: 0cm">
+            <img src='images/Garmin-Kazakhstan1.png' />
+        </td>
+        <td width="50%" style="border: none; padding: 0cm">
+            <img src='images/Garmin-Kazakhstan2.png' />
+        </td>
+    </tr>
+</table>
+
+<p><br/></p>
+
+<p>On your Garmin Dakota device it is necessary to switch-off all maps, except earlier installed map of Kazakhstan.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-99" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: settings</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><strong>Self-dependent work</strong></p>
+
+<ol>
+<li>Turn on the Garmin Dakota device.</li>
+<li>Go to the page of settings of the device, switch GPS in the mode <em>&quot;Demo&quot;</em>.</li>
+<li>Return to the menu of settings, switch the device from the American units of measure to the metric.</li>
+</ol>
+
+<div style='text-align: center;'>
+<br/>
+<a class="btn btn-large btn-danger" rel="popover" data-content="In the main menu press the button <i>Settings</i>. <br/> In the setting page press the button <i>Arrow down</i>. <br/> Press the button <i>Units</i>. <br/> Press in turn all the buttons and then the button <i>Меtric</i>." data-original-title="" id='example'>Press for hint </a>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-100" style="background:lightblue;">
+  <article data-timings="">
+    <div style='text-align: center;'>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <font color="white" size="5">
+        Reading the topographical information
+    </font>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-101" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: waypoints</h2>
+  </hgroup>
+  <article data-timings="">
+    <div style='text-align: center;'>
+    <img src='images/Garmin-points1.png' />
+</div>
+
+<ul class = "build incremental">
+<li>Locations or marks in the electronic map of the receiver which can be written down in memory of the device are called as <strong>waypoints</strong>.</li>
+<li>Waypoints are used by drawing up routes, and also for rectilinear navigation in the mode <strong>START</strong> to the chosen waypoint.</li>
+<li>Waypoints of the receiver can be exported as layers of GIS and become a basis for creation of spatial data.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-102" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: waypoints</h2>
+  </hgroup>
+  <article data-timings="">
+    <div style='text-align: center;'>
+    <img src='images/Garmin-main_menu3.png' />
+</div>
+
+<p>There are some methods of creation way or, in the terms of the Garmin Dakota, <em>route</em> points.</p>
+
+<ul class = "build incremental">
+<li>First, it is possible to press the button <em>&quot;Mark a route point&quot;</em> in the main menu of the navigator to write down the current position of the researcher as a route point (the most exact way).</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-103" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: waypoints</h2>
+  </hgroup>
+  <article data-timings="">
+    <table width="100%" cellpadding="0" cellspacing="0">
+    <tr valign="top">
+        <td width="33%" style="border: none; padding: 0cm">
+            <p align="center"><img src='images/Garmin-points2.png' /></p>
+        </td>
+        <td width="33%" style="border: none; padding: 0cm">
+            <p align="center"><img src='images/Garmin-points3.png' /></p>
+        </td>
+        <td width="33%" style="border: none; padding: 0cm">
+            <p align="center"><img src='images/Garmin-points4.png' /></p>
+        </td>
+    </tr>
+</table>
+
+<ul class = "build incremental">
+<li>Secondly, irrespective of if a navigator is in the mode of reception of satellite signals 2D/3D or GPS is switched off, it is possible to create way (route) point by means of the map page. Being on the page of the map it is necessary, having touched with a finger the touch screen, to place the pointer in the form of a pin on an object / point for which it is necessary to create a route point. </li>
+<li>Near the name of an object (point) it is necessary to press the button with three strips for transition to the page of management of a route point.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-104" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: waypoints</h2>
+  </hgroup>
+  <article data-timings="">
+    <table width="100%" cellpadding="0" cellspacing="0">
+    <tr valign="top">
+        <td width="33%" style="border: none; padding: 0cm">
+            <p align="center"><img src='images/Garmin-points2.png' /></p>
+        </td>
+        <td width="33%" style="border: none; padding: 0cm">
+            <p align="center"><img src='images/Garmin-points3.png' /></p>
+        </td>
+        <td width="33%" style="border: none; padding: 0cm">
+            <p align="center"><img src='images/Garmin-points4.png' /></p>
+        </td>
+    </tr>
+</table>
+
+<ul class = "build incremental">
+<li>It is possible to save a route point pressing the button with a flag.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-105" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: waypoints</h2>
+  </hgroup>
+  <article data-timings="">
+    <table width="100%" cellpadding="0" cellspacing="0">
+    <tr valign="top">
+        <td width="33%" style="border: none; padding: 0cm">
+            <p align="center"><img src='images/Garmin-points5.png' /></p>
+        </td>
+        <td width="33%" style="border: none; padding: 0cm">
+            <p align="center"><img src='images/Garmin-points6.png' /></p>
+        </td>
+        <td width="33%" style="border: none; padding: 0cm">
+            <p align="center"><img src='images/Garmin-points7.png' /></p>
+        </td>
+    </tr>
+</table>
+
+<p><br/></p>
+
+<ul class = "build incremental">
+<li>After creation of a waypoint it is possible to save it with parameters by default pressing the button <em>&quot;Save&quot;</em> or to change its name or other parameters pressing the button <em>&quot;Save and edit&quot;</em>. </li>
+<li>It is possible to accept changes pressing the button with a green tick.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-106" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: waypoints</h2>
+  </hgroup>
+  <article data-timings="">
+    <table width="100%" cellpadding="0" cellspacing="0">
+    <tr valign="top">
+        <td width="33%" style="border: none; padding: 0cm">
+            <p align="center"><img src='images/Garmin-points8.png' /></p>
+        </td>
+        <td width="33%" style="border: none; padding: 0cm">
+            <p align="center"><img src='images/Garmin-points9.png' /></p>
+        </td>
+        <td width="33%" style="border: none; padding: 0cm">
+            <p align="center"><img src='images/Garmin-points10.png' /></p>
+        </td>
+    </tr>
+</table>
+
+<p><br/></p>
+
+<ul class = "build incremental">
+<li>Access to the waypoints created by the user can be got by means of the button <em>&quot;Manager of route points&quot;</em> of the main menu.</li>
+<li>To get access to any waypoint is possible by clicking on the button with its name.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-107" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: waypoints</h2>
+  </hgroup>
+  <article data-timings="">
+    <table width="100%" cellpadding="0" cellspacing="0">
+    <tr valign="top">
+        <td width="33%" style="border: none; padding: 0cm">
+            <p align="center"><img src='images/Garmin-points10.png' /></p>
+        </td>
+        <td width="33%" style="border: none; padding: 0cm">
+            <p align="center"><img src='images/Garmin-points11.png' /></p>
+        </td>
+        <td width="33%" style="border: none; padding: 0cm">
+            <p align="center"><img src='images/Garmin-points7.png' /></p>
+        </td>
+    </tr>
+</table>
+
+<p><br/></p>
+
+<ul class = "build incremental">
+<li>It is possible to edit properties of a waypoint by pressing the button with the image of a pencil on its page.</li>
+<li>Including it is possible to remove a waypoint. To see the removal button, press twice the button <em>Arrow Down</em> on the page of the point.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-108" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: routes and tracks</h2>
+  </hgroup>
+  <article data-timings="">
+    <table width="100%" cellpadding="0" cellspacing="0">
+    <tr valign="top">
+        <td width="33%" style="border: none; padding: 0cm">
+            <p align="center"><img src='images/Garmin-tracks1.png' /></p>
+        </td>
+        <td width="33%" style="border: none; padding: 0cm">
+            <p align="center"><img src='images/Garmin-tracks2.png' /></p>
+        </td>
+        <td width="33%" style="border: none; padding: 0cm">
+            <p align="center"><img src='images/Garmin-tracks3.png' /></p>
+        </td>
+    </tr>
+</table>
+
+<p><br/></p>
+
+<ul class = "build incremental">
+<li><strong>The route</strong> represents sequence of several intermediate waypoints which will lead you to a terminal point of appointment. Points are connected by the line, the assumed direction of the movement.</li>
+<li>The direction of movement (traveled distance) is called as <strong>track</strong>.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-109" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: routes and tracks</h2>
+  </hgroup>
+  <article data-timings="">
+    <table width="100%" cellpadding="0" cellspacing="0">
+    <tr valign="top">
+        <td width="33%" style="border: none; padding: 0cm">
+            <p align="center"><img src='images/Garmin-tracks1.png' /></p>
+        </td>
+        <td width="33%" style="border: none; padding: 0cm">
+            <p align="center"><img src='images/Garmin-tracks2.png' /></p>
+        </td>
+        <td width="33%" style="border: none; padding: 0cm">
+            <p align="center"><img src='images/Garmin-tracks3.png' /></p>
+        </td>
+    </tr>
+</table>
+
+<p><br/></p>
+
+<ul class = "build incremental">
+<li>In memory the Garmin Dakota can store up to 200 tracks and up to 10 000 points of the traversed routes.</li>
+<li>For access to the page of management of tracks it is necessary to press the button <em>&quot;The manager of a track&quot;</em> in the main menu.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-110" style="background:;">
+  <hgroup>
+    <h2>Garmin Dakota: routes and tracks</h2>
+  </hgroup>
+  <article data-timings="">
+    <table width="100%" cellpadding="0" cellspacing="0">
+    <tr valign="top">
+        <td width="33%" style="border: none; padding: 0cm">
+            <p align="center"><img src='images/Garmin-tracks1.png' /></p>
+        </td>
+        <td width="33%" style="border: none; padding: 0cm">
+            <p align="center"><img src='images/Garmin-tracks2.png' /></p>
+        </td>
+        <td width="33%" style="border: none; padding: 0cm">
+            <p align="center"><img src='images/Garmin-tracks3.png' /></p>
+        </td>
+    </tr>
+</table>
+
+<p><br/></p>
+
+<p>Creating and changing routes happens using  <em>&quot;Route page&quot;</em> (to access it you should press <em>“The routes planner&quot;</em>.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-111" style="background:red;">
+  <article data-timings="">
+    <div style='text-align: center;'>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <font color="yellow">
+        ATTENTION!<br/><br/>
+        Complete routes are more convenient to create on the computer <br/><br/>
+        in the programme BaseCamp<br/><br/> 
+        (then you can export it to a device).<br/><br/>
+    </font>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-112" style="background:darkgrey;">
+  <article data-timings="">
+    <p><a name='3'></p>
+
+<div style='text-align: center;'>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <font color="white" size="6">
+        Work with routes and tracks in BaseCamp
+    </font>
+</div>
+
+<p></a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-113" style="background:;">
+  <hgroup>
+    <h2>BaseCamp: routes and tracks</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="images/BaseCamp30.png" alt="img"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-114" style="background:;">
+  <hgroup>
+    <h2>BaseCamp: routes and tracks</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="images/BaseCamp31.png" alt="img"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-115" style="background:;">
+  <hgroup>
+    <h2>BaseCamp: routes and tracks</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="images/BaseCamp32.png" alt="img"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-116" style="background:;">
+  <hgroup>
+    <h2>BaseCamp: routes and tracks</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="images/BaseCamp33.png" alt="img"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-117" style="background:;">
+  <hgroup>
+    <h2>BaseCamp: routes and tracks</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="images/BaseCamp34.png" alt="img"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-118" style="background:#CBE7A5;">
+  <article data-timings="">
+    <div style='text-align: center;'>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <font color=#800000>
+        In the subsequent the kml map can be seen in the Google Earth<br/><br/>
+        or added in QuantumGIS as a point layer.<br/><br/>
+        But it is another story…<br/><br/>
+    </font>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-119" style="background:lightblue;">
+  <article data-timings="">
+    <div style='text-align: center;'>
+   <b>About author</b><br/><br/>
+   <img src='images/Me.png' />
+   <br/><br/>
+  <b>Кuznetsov Andrey </b><br/><br/>
+   <i>Cand. Sci. Med., Senior Researcher of the brucellosis laboratory<br/><br/> 
+   of the  Kazakh Scientific Center of Quarantine and Zoonotic Diseases <br/><br/>
+   <a href='mailto:linmedsoft@gmail.com'>linmedsoft@gmail.com</a><br/><br/>
+   <a href='mailto:akuznecov@kscqzd.kz'>akuznecov@kscqzd.kz</a><br/><br/>
+   <a href='https://www.linkedin.com/in/andreynkuznetsov'> LinkedIn</a><br/><br/>
+   <a href='http://www.researchgate.net/profile/Andrey_Kuznetsov11'> ResearchGate</p></a>
+   </i>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Content'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title=''>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='GPS'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Epidemiology and spatial data'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='Spatial data'>
+         5
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title='The spatial epidemiology'>
+         6
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=7 title='John Snow and diseases&#39; mapping'>
+         7
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=8 title='The original map of John Snow'>
+         8
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=9 title='The John Snow&#39;s map reproduced in Quantum GIS'>
+         9
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=10 title='The heat map of tick-borne borreliosis spreading (QGIS)'>
+         10
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=11 title='ArcGIS Online'>
+         11
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=12 title='GIS (Geographic Information Systems)'>
+         12
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=13 title='Obtaining spatial data for input into GIS'>
+         13
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=14 title='Obtaining spatial data for input into GIS'>
+         14
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=15 title='Obtaining spatial data for input into GIS'>
+         15
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=16 title='Obtaining spatial data for input into GIS'>
+         16
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=17 title='Obtaining spatial data for input into GIS'>
+         17
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=18 title=''>
+         18
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=19 title='The Global Positioning System: definition'>
+         19
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=20 title='GPS: technical aspects'>
+         20
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=21 title='GPS: technical aspects'>
+         21
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=22 title='Radar: measurement of distance between two points'>
+         22
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=23 title='Radar: measurement of distance between two points'>
+         23
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=24 title='GPS: calculation of three-dimensional coordinates'>
+         24
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=25 title='GPS errors'>
+         25
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=26 title='GPS errors'>
+         26
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=27 title='GPS errors'>
+         27
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=28 title='The global satellite navigation systems'>
+         28
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=29 title=''>
+         29
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=30 title='The Garmin Dakota 20 appearance'>
+         30
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=31 title='Garmin Dakota: a power button'>
+         31
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=32 title=''>
+         32
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=33 title='Back surface of Garmin Dakota'>
+         33
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=34 title='Connection of batteries'>
+         34
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=35 title=''>
+         35
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=36 title='Garmin Dakota: updating in the BaseCamp programme'>
+         36
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=37 title='Garmin Dakota: updating in the BaseCamp programme'>
+         37
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=38 title='BaseCamp: steps of installation'>
+         38
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=39 title='BaseCamp: steps of installation'>
+         39
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=40 title='BaseCamp: steps of installation'>
+         40
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=41 title='BaseCamp: steps of installation'>
+         41
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=42 title='BaseCamp: the first time launching'>
+         42
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=43 title='BaseCamp: the first time launching'>
+         43
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=44 title='BaseCamp: the first time launching'>
+         44
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=45 title='BaseCamp: the training video'>
+         45
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=46 title='BaseCamp: the training video'>
+         46
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=47 title='Garmin Dakota: updating in the BaseCamp programme'>
+         47
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=48 title='Garmin Dakota: updating in the BaseCamp programme'>
+         48
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=49 title='Garmin Dakota: updating in the BaseCamp programme'>
+         49
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=50 title='Garmin Dakota: updating in the BaseCamp programme'>
+         50
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=51 title='Garmin Dakota: updating in the BaseCamp programme'>
+         51
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=52 title='Garmin Dakota: updating in the BaseCamp programme'>
+         52
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=53 title='Garmin Dakota: updating in the BaseCamp programme'>
+         53
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=54 title='Garmin Dakota: updating in the BaseCamp programme'>
+         54
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=55 title='Garmin Dakota: updating in the BaseCamp programme'>
+         55
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=56 title='Garmin Dakota: loading of additional maps'>
+         56
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=57 title='Garmin Dakota: loading of additional maps'>
+         57
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=58 title='Garmin Dakota: loading of additional maps'>
+         58
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=59 title='Garmin Dakota: loading of additional maps'>
+         59
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=60 title='Garmin Dakota: loading of additional maps'>
+         60
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=61 title='Garmin Dakota: loading of additional maps'>
+         61
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=62 title=''>
+         62
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=63 title='Garmin Dakota: loading of additional maps'>
+         63
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=64 title='Garmin Dakota: loading of additional maps'>
+         64
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=65 title='Garmin Dakota: loading of additional maps'>
+         65
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=66 title='Garmin Dakota: loading of additional maps'>
+         66
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=67 title='Garmin Dakota: loading of additional maps'>
+         67
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=68 title='Garmin Dakota: loading of additional maps'>
+         68
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=69 title='Garmin Dakota: loading of additional maps'>
+         69
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=70 title='Garmin Dakota: loading of additional maps'>
+         70
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=71 title='Garmin Dakota: loading of additional maps'>
+         71
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=72 title='Garmin Dakota: loading of additional maps'>
+         72
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=73 title='Garmin Dakota: loading of additional maps'>
+         73
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=74 title='Garmin Dakota: loading of additional maps'>
+         74
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=75 title='Garmin Dakota: loading of additional maps'>
+         75
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=76 title='Garmin Dakota: loading of additional maps'>
+         76
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=77 title='Garmin Dakota: loading of additional maps'>
+         77
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=78 title='Garmin Dakota: loading of additional maps'>
+         78
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=79 title=''>
+         79
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=80 title=''>
+         80
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=81 title='Check youself'>
+         81
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=82 title='Check youself'>
+         82
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=83 title='Garmin Dakota: connection to satellites'>
+         83
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=84 title='Garmin Dakota: connection to satellites'>
+         84
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=85 title='Garmin Dakota: connection to satellites'>
+         85
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=86 title='Garmin Dakota: connection to satellites'>
+         86
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=87 title='Garmin Dakota: connection to satellites'>
+         87
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=88 title='Garmin Dakota: connection to satellites'>
+         88
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=89 title=''>
+         89
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=90 title='Garmin Dakota: settings'>
+         90
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=91 title='Garmin Dakota: settings'>
+         91
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=92 title='Garmin Dakota: settings'>
+         92
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=93 title=''>
+         93
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=94 title='Garmin Dakota: settings'>
+         94
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=95 title='Garmin Dakota: settings'>
+         95
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=96 title='Garmin Dakota: settings'>
+         96
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=97 title='Garmin Dakota: settings'>
+         97
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=98 title='Garmin Dakota: settings'>
+         98
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=99 title='Garmin Dakota: settings'>
+         99
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=100 title=''>
+         100
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=101 title='Garmin Dakota: waypoints'>
+         101
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=102 title='Garmin Dakota: waypoints'>
+         102
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=103 title='Garmin Dakota: waypoints'>
+         103
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=104 title='Garmin Dakota: waypoints'>
+         104
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=105 title='Garmin Dakota: waypoints'>
+         105
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=106 title='Garmin Dakota: waypoints'>
+         106
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=107 title='Garmin Dakota: waypoints'>
+         107
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=108 title='Garmin Dakota: routes and tracks'>
+         108
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=109 title='Garmin Dakota: routes and tracks'>
+         109
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=110 title='Garmin Dakota: routes and tracks'>
+         110
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=111 title=''>
+         111
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=112 title=''>
+         112
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=113 title='BaseCamp: routes and tracks'>
+         113
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=114 title='BaseCamp: routes and tracks'>
+         114
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=115 title='BaseCamp: routes and tracks'>
+         115
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=116 title='BaseCamp: routes and tracks'>
+         116
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=117 title='BaseCamp: routes and tracks'>
+         117
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=118 title=''>
+         118
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=119 title=''>
+         119
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  <script src="libraries/widgets/bootstrap/js/bootstrap.min.js"></script>
+<script src="libraries/widgets/bootstrap/js/bootbox.min.js"></script>
+<script src="libraries/widgets/quiz/js/jquery.quiz.js"></script>
+<script src="libraries/widgets/quiz/js/mustache.min.js"></script>
+<script src="libraries/widgets/quiz/js/quiz-app.js"></script>
+
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<script>  
+  $(function (){ 
+    $("#example").popover(); 
+    $("[rel='tooltip']").tooltip(); 
+  });  
+  </script>  
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
